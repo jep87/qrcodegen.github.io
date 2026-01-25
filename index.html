@@ -260,7 +260,7 @@
 </head>
 <body>
     <header>
-        <h1>📱 MyApp</h1>
+        <h1>📱 QRCodeGen</h1>
         <p>Permissions et Fonctionnalités de l'Application</p>
     </header>
 
@@ -269,13 +269,14 @@
         <section>
             <h2>À propos de l'application</h2>
             <p>
-                <strong>MyApp</strong> est une application mobile multiplateforme développée avec MAUI/.NET qui permet 
-                de [décrire votre cas d'usage]. L'application est conçue pour offrir une expérience utilisateur 
+                <strong></strong>
+                QRCodeGen est une application mobile multiplateforme développée avec MAUI/.NET qui permet 
+                de générer un QR code. L'application est conçue pour offrir une expérience utilisateur 
                 fluide et sécurisée sur iOS et Android.
             </p>
             <div class="info-box">
                 <h4>📊 Version</h4>
-                <p><strong>1.0.0</strong> - Disponible sur iOS App Store et Google Play Store</p>
+                <p><strong>1.0.1</strong> - Disponible sur iOS App Store et Google Play Store</p>
             </div>
         </section>
 
@@ -285,41 +286,11 @@
 
             <h3>iOS - Info.plist Permissions</h3>
             <div class="permission-grid">
-                <div class="permission-card">
-                    <h4>📍 Localisation</h4>
-                    <span class="badge">NSLocationWhenInUseUsageDescription</span>
-                    <p>Accès à la position GPS de l'utilisateur pour fonctionnalités géolocalisées.</p>
-                </div>
 
-                <div class="permission-card">
-                    <h4>📷 Caméra</h4>
-                    <span class="badge">NSCameraUsageDescription</span>
-                    <p>Accès à la caméra pour capturer des photos et vidéos.</p>
-                </div>
 
-                <div class="permission-card">
-                    <h4>🎤 Microphone</h4>
-                    <span class="badge">NSMicrophoneUsageDescription</span>
-                    <p>Accès au microphone pour l'enregistrement audio.</p>
-                </div>
 
-                <div class="permission-card">
-                    <h4>📸 Photothèque</h4>
-                    <span class="badge">NSPhotoLibraryUsageDescription</span>
-                    <p>Accès à la photothèque pour sélectionner des images.</p>
-                </div>
 
-                <div class="permission-card">
-                    <h4>📋 Calendrier</h4>
-                    <span class="badge">NSCalendarsUsageDescription</span>
-                    <p>Accès au calendrier pour créer des événements.</p>
-                </div>
 
-                <div class="permission-card">
-                    <h4>📞 Contacts</h4>
-                    <span class="badge">NSContactsUsageDescription</span>
-                    <p>Accès aux contacts pour faciliter les partages.</p>
-                </div>
             </div>
 
             <h3 style="margin-top: 40px;">Android - Permissions AndroidManifest.xml</h3>
@@ -328,44 +299,19 @@
                     <tr>
                         <th>Permission</th>
                         <th>Raison</th>
-                        <th>Type</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><code>android.permission.ACCESS_FINE_LOCATION</code></td>
-                        <td>Localisation GPS précise</td>
-                        <td><span class="platform-badge platform-android">DANGEROUS</span></td>
-                    </tr>
-                    <tr>
-                        <td><code>android.permission.CAMERA</code></td>
-                        <td>Accès à la caméra</td>
-                        <td><span class="platform-badge platform-android">DANGEROUS</span></td>
-                    </tr>
-                    <tr>
-                        <td><code>android.permission.RECORD_AUDIO</code></td>
-                        <td>Enregistrement audio</td>
-                        <td><span class="platform-badge platform-android">DANGEROUS</span></td>
-                    </tr>
-                    <tr>
-                        <td><code>android.permission.READ_EXTERNAL_STORAGE</code></td>
-                        <td>Lecture de fichiers</td>
-                        <td><span class="platform-badge platform-android">DANGEROUS</span></td>
                     </tr>
                     <tr>
                         <td><code>android.permission.WRITE_EXTERNAL_STORAGE</code></td>
                         <td>Écriture de fichiers</td>
-                        <td><span class="platform-badge platform-android">DANGEROUS</span></td>
-                    </tr>
-                    <tr>
-                        <td><code>android.permission.INTERNET</code></td>
-                        <td>Connexion réseau</td>
                         <td><span class="platform-badge platform-android">NORMAL</span></td>
                     </tr>
                     <tr>
-                        <td><code>android.permission.ACCESS_NETWORK_STATE</code></td>
-                        <td>État du réseau</td>
-                        <td><span class="platform-badge platform-android">NORMAL</span></td>
+                    </tr>
+                    <tr>
                     </tr>
                 </tbody>
             </table>
@@ -375,14 +321,7 @@
         <section>
             <h2>✨ Fonctionnalités</h2>
             <ul class="feature-list">
-                <li><strong>Localisation en temps réel</strong> - Suivi GPS de votre position</li>
-                <li><strong>Capture de photos/vidéos</strong> - Enregistrement multimédia</li>
-                <li><strong>Synchronisation cloud</strong> - Stockage sécurisé des données</li>
-                <li><strong>Notifications push</strong> - Alertes et rappels</li>
-                <li><strong>Mode hors ligne</strong> - Fonctionnement sans connexion</li>
-                <li><strong>Intégration ERP</strong> - Synchronisation avec systèmes métier</li>
-                <li><strong>Authentification sécurisée</strong> - Biométrie et mot de passe</li>
-                <li><strong>Export de données</strong> - Téléchargement en PDF/Excel</li>
+                <li><strong>Export de données</strong> - Export des fichiers png généré</li>
             </ul>
         </section>
 
@@ -423,21 +362,18 @@
             <h2>💾 Stockage et Données</h2>
             <h3>Données locales</h3>
             <ul class="feature-list">
-                <li>Base de données SQLite pour données structurées</li>
                 <li>Fichiers temporaires dans le cache de l'app</li>
                 <li>Préférences utilisateur (themes, langues, etc.)</li>
             </ul>
 
             <h3>Données cloud</h3>
             <ul class="feature-list">
-                <li>Synchronisation sécurisée avec serveur cloud</li>
-                <li>Sauvegarde automatique des données importantes</li>
-                <li>Accès multi-dispositif aux données utilisateur</li>
+                <li>Aucune donnée avec serveur cloud</li>
             </ul>
 
             <div class="info-box">
                 <h4>📊 Espace disque requis</h4>
-                <p>Environ 150 MB d'espace libre requis pour l'installation complète</p>
+                <p>Environ 35 MB d'espace libre requis pour l'installation complète</p>
             </div>
         </section>
 
@@ -449,20 +385,17 @@
                 veuillez nous contacter :
             </p>
             <ul class="feature-list">
-                <li><strong>Email support:</strong> support@myapp.com</li>
-                <li><strong>Site web:</strong> https://www.myapp.com</li>
-                <li><strong>Documentation:</strong> https://docs.myapp.com</li>
-                <li><strong>Signaler un bug:</strong> issues@myapp.com</li>
+                <li><strong>Email support:</strong> jpascaud@gmail.com</li>
             </ul>
         </section>
 
         <div class="last-update">
-            <p>Dernière mise à jour : 19 janvier 2026</p>
+            <p>Dernière mise à jour : 25 janvier 2026</p>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2026 MyApp. Tous droits réservés.</p>
+        <p>© 2026 QrCodeGen. Tous droits réservés.</p>
         <p>
             <a href="#politique-privacy">Politique de confidentialité</a> | 
             <a href="#conditions">Conditions d'utilisation</a> | 
